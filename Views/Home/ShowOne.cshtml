@@ -1,0 +1,14 @@
+@model Dish
+
+<a href="/">Home</a>
+
+<div class="text-center container">
+    <h1>@ViewBag.dishToShow.Name</h1>
+    <h3>By: @ViewBag.dishToShow.ChefName</h3>
+    <br>
+    <p>@ViewBag.dishToShow.Description</p>
+    <p>Calories : @ViewBag.dishToShow.Calories</p>
+    <p>Tastiness : @ViewBag.dishToShow.Tastiness</p>
+    <div class="display-flex"><a href="/edit/@ViewBag.dishToShow.DishId">Edit</a></div>
+    <div class="display-flex m-3"></div><a href="/delete/@ViewBag.dishToShow.DishId">Delete</a></div>
+</div>
